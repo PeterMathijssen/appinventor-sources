@@ -1,107 +1,398 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab">
 
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta charset="utf-8" />
-<link rel="shortcut icon" href="http://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/AI2-Favicon_1.ico" type="image/vnd.microsoft.icon" />
-<link rel="shortlink" href="http://appinventor.mit.edu/explore/node/325.html" />
-<link rel="canonical" href="control.html" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-  <title>AI2 Control | Explore MIT App Inventor</title>
-  <style type="text/css" media="all">
-@import url("http://appinventor.mit.edu/explore/modules/system/system.basea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/system/system.menusa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/system/system.messagesa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/system/system.themea732.css?pbgpxg");
-</style>
-<style type="text/css" media="all">
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.mina732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.mina732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.mina732.css?pbgpxg");
-</style>
-<style type="text/css" media="all">
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/date/date_api/datea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/date/date_repeat_field/date_repeat_fielda732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/field/theme/fielda732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/node/nodea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/search/searcha732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/modules/user/usera732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/extlink/extlinka732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/views/css/viewsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.basea732.css?pbgpxg");
-</style>
-<style type="text/css" media="all">
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/ctools/css/ctoolsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/lightbox2/css/lightboxa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/modules/panels/css/panelsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/libraries/superfish/css/superfisha732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/libraries/superfish/css/superfish-smallscreena732.css?pbgpxg");
-</style>
-<style type="text/css" media="screen">
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/adaptivetheme/adaptivetheme/adaptivetheme/at_core/css/at.layouta732.css?pbgpxg");
-</style>
-<style type="text/css" media="all">
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/html-elementsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/formsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/tablesa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/pagea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/articlesa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/commentsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/fieldsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/blocksa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/navigationa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/newexploretheme/color/colorsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/sky.settings.stylea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/newexploretheme/css/NewExplorethemea732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/newexploretheme/video-js/video-jsa732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/css/reseta732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/css/typographya732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/css/layouta732.css?pbgpxg");
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/css/drupala732.css?pbgpxg");
-</style>
-<style type="text/css" media="print">
-@import url("http://appinventor.mit.edu/explore/sites/all/themes/sky/css/printa732.css?pbgpxg");
-</style>
-<style type="text/css" media="screen">
-@import url("http://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/adaptivetheme/appinventor_files/appinventor.default.layouta732.css?pbgpxg");
-</style>
-<link type="text/css" rel="stylesheet" href="http://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/adaptivetheme/appinventor_files/appinventor.responsive.layouta732.css?pbgpxg" media="only screen" />
-<link type="text/css" rel="stylesheet" href="http://appinventor.mit.edu/explore/sites/all/themes/sky/css/sky.responsive.stylea732.css?pbgpxg" media="all" />
-<link type="text/css" rel="stylesheet" href="http://appinventor.mit.edu/explore/sites/all/themes/sky/css/sky.responsive.gpanelsa732.css?pbgpxg" media="all" />
-<link type="text/css" rel="stylesheet" href="http://appinventor.mit.edu/explore/sites/all/themes/appinventor/css/appinventor.responsive.stylea732.css?pbgpxg" media="all" />
-<link type="text/css" rel="stylesheet" href="http://appinventor.mit.edu/explore/sites/all/themes/appinventor/css/modtheme.responsive.gpanelsa732.css?pbgpxg" media="all" />
-  <script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min468f.js?v=1.10.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/misc/jquery.once7839.js?v=1.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/misc/drupala732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min468f.js?v=1.10.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min468f.js?v=1.10.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min468f.js?v=1.10.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min468f.js?v=1.10.2"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/extlink/extlinka732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/iframe/iframea732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/lightbox2/js/lightboxa732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/google_analytics/googleanalyticsa732.js?pbgpxg"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-31803258-1", {"cookieDomain":"auto"});ga("send", "pageview");
-//--><!]]>
-</script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/jsImgSlider/js-image-slidera732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/themes/appinventor/assets/jsMasonry/maina732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/libraries/superfish/jquery.hoverIntent.minifieda732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/libraries/superfish/sfsmallscreena732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/libraries/superfish/superfisha732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/libraries/superfish/supersubsa732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/modules/superfish/superfisha732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/themes/sky/js/scriptsa732.js?pbgpxg"></script>
-<script type="text/javascript" src="http://appinventor.mit.edu/explore/sites/all/themes/newexploretheme/video-js/videoa732.js?pbgpxg"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"appinventor","theme_token":"5nYczCTWoGxdSLIqXZjWw1Lr7Egbo1soC92oQsHKgms","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/iframe\/iframe.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/appinventor\/assets\/jsImgSlider\/js-image-slider.js":1,"sites\/all\/themes\/appinventor\/assets\/jsMasonry\/main.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/sky\/js\/scripts.js":1,"sites\/all\/themes\/newexploretheme\/video-js\/video.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/sky\/css\/html-elements.css":1,"sites\/all\/themes\/sky\/css\/forms.css":1,"sites\/all\/themes\/sky\/css\/tables.css":1,"sites\/all\/themes\/sky\/css\/page.css":1,"sites\/all\/themes\/sky\/css\/articles.css":1,"sites\/all\/themes\/sky\/css\/comments.css":1,"sites\/all\/themes\/sky\/css\/fields.css":1,"sites\/all\/themes\/sky\/css\/blocks.css":1,"sites\/all\/themes\/sky\/css\/navigation.css":1,"sites\/all\/themes\/newexploretheme\/color\/colors.css":1,"sites\/all\/themes\/sky\/css\/sky.settings.style.css":1,"sites\/all\/themes\/newexploretheme\/css\/NewExploretheme.css":1,"sites\/all\/themes\/newexploretheme\/video-js\/video-js.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/reset.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/typography.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/layout.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/drupal.css":1,"sites\/all\/themes\/sky\/css\/print.css":1,"public:\/\/adaptivetheme\/appinventor_files\/appinventor.default.layout.css":1,"public:\/\/adaptivetheme\/appinventor_files\/appinventor.responsive.layout.css":1,"sites\/all\/themes\/sky\/css\/sky.responsive.style.css":1,"sites\/all\/themes\/sky\/css\/sky.responsive.gpanels.css":1,"sites\/all\/themes\/appinventor\/css\/appinventor.responsive.style.css":1,"sites\/all\/themes\/appinventor\/css\/modtheme.responsive.gpanels.css":1}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":0,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/search\/node":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","title":"! ACTIVE AI 2 MAIN MENU"},"supersubs":true}}},"adaptivetheme":{"appinventor":{"layout_settings":{"bigscreen":"two-sidebars-right","tablet_landscape":"three-col-grail","tablet_portrait":"one-col-vert","smalltouch_landscape":"one-col-vert"},"media_query_settings":{"bigscreen":"only screen and (min-width:1025px)","tablet_landscape":"\u0026#039;only screen and (min-width:769px)$","tablet_portrait":"\u0026#039;only screen and (min-width:481px) $","smalltouch_landscape":"\u0026#039;only screen and (min-width:32$","smalltouch_portrait":"only screen and (max-width:320px)"}}}});
-//--><!]]>
-</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <meta charset="utf-8">
+
+
+  <meta about="/front_page" property="sioc:num_replies" content="0" datatype="xsd:integer">
+
+
+  <meta content="Front Page" about="/front_page" property="dc:title">
+
+
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)">
+    <link type="text/css" rel="stylesheet" href="../superfish.css" media="all">
+    <link type="text/css" rel="stylesheet" href="../reset.css" media="all">
+    <link type="text/css" rel="stylesheet" href="../colors.css" media="all">
+    <link type="text/css" rel="stylesheet" href="../layout.css" media="all">
+
+<!-- Title ----------------------- -->
+  <title>Connectivity Components - App Inventor for Android</title>
+
+
+<!-- Title ----------------------- -->
+
+  <style>
+      body{
+      background: url("http://ai2.appinventor.mit.edu/images/squairy_light.png") repeat scroll center top;
+      margin-top:0;
+      }
+      #page{
+      width: 960px;
+      margin: 0 auto;
+      }
+      #branding, #menu-bar, #create-button,#region-create{
+      display: inline-block;
+      }
+      #branding{
+      width:25%;
+      margin:0;
+      }
+      #top_bar, #top_bar_background {
+      top:0;
+      min-height: 40px;
+      width:100%;
+      margin-bottom: 4px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background-color: #f2f2f2;
+      background-image: -moz-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f3f3f3));
+      background-image: -webkit-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: -o-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: linear-gradient(to bottom, #f2f2f2, #f3f3f3);
+      background-repeat: repeat-x;
+      border: 1px solid #d4d4d4;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+      *zoom: 1;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      position: relative;
+      }
+      #top_bar, #top_bar_background{
+      width:100%;
+      height: 70px;
+      /*position:absolute;*/
+      margin:0 auto;
+      left:0;
+      right:0;
+      top:0;
+      }
+      #header{
+      width:960px;
+      margin:0 auto;
+      height:50px;
+      position: relative;
+      }
+      /* LOGO */
+      #logo {
+      margin: 8px 4px 4px 4px;
+      float: left;
+      padding: 0 20px;
+      }
+      #logo img{
+      /*background: url(../images/logo_text.png) no-repeat;*/
+      width: 180px;
+      height: 40px;
+      display: block;
+      }
+      #logo img:hover {
+      -webkit-filter: drop-shadow(0px 0px 3px #eee);
+      filter:         drop-shadow(0px 0px 3px #eee);
+      }
+      button {
+      border-radius:0 !important;
+      color:#FFF;
+      border:none;
+      padding: 0.5em 1em;
+      }
+      button:hover{
+      color:#FFF;
+      border:none;
+      border-radius:0 !important;
+      }
+      #branding, #create-button, #region-create, #menu-bar li{
+      display: block;
+      }
+/*
+      #menu-bar{
+      margin: 0;
+      padding-top:10px;
+      position: absolute;
+      top: 0;
+      }
+*/
+      #menu-bar li{
+      margin:0;
+      }
+      #menu-bar li a{
+      font-family: 'Roboto Light', Helvetica, sans-serif;
+      font-weight:300;
+      font-size: 22px;
+      text-decoration: none;
+      color: #3D3D3D;
+/*      background:transparent !important; */
+      border-radius:0 !important;
+      display: block;
+      line-height: 2.5em;
+      padding: 0 1em;
+      white-space: nowrap;
+      }
+      #menu-bar li a.active{
+      color: #000;
+      }
+      #menu-bar li a:hover{
+      color: #8fc202;
+      }
+      .create-button{
+      float:right;
+      margin:8px 25px 10px 10px;
+      }
+      .create-button button:hover{
+      cursor: pointer;
+      background: #ffa033;
+      }
+      .create-button button{background: #FF8800 !important;
+      border: none !important;
+      color: #FFF;
+      font-weight: 300;
+      border-radius: 0;
+      font-family: 'Roboto',Helvetica,Arial,sans-serif;
+      font-size: 20px;
+      }
+      #content-column {
+      background: #F7F9F2;
+      border-radius: 2px;
+      margin-top: 0px;
+      padding: 15px 20px;
+      }
+      footer{
+      background-color: #e3e1df;
+      color: #010101;
+      padding: 20px 0;
+      margin-top: 25px;
+      }
+      /*################TYPOGRAPHY##################*/
+      /* html elements */
+      html {
+      font-size: 81.3%; /* 16px x 81.3% = 13px */
+      }
+      body {
+      font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0;
+      }
+      /* Sizes match proper font scaling. */
+      h1, h2, h3, h4, h5, h6 {
+      font-weight: 400;
+      line-height: 1em;
+      padding: 0;
+      margin: 24px 0 12px 0;
+      }
+      h1 { font-size: 2.153em; } /* 28px */
+      h2 { font-size: 1.692em; } /* 22px */
+      h3 { font-size: 1.385em; } /* 18px */
+      h4 { font-size: 1.231em; } /* 16px */
+      h5 { font-size: 1.077em; } /* 14px */
+      h6 { font-size: 1em; }
+      img,
+      a img {
+      border:none;
+      }
+      img {
+      max-width: 100%;
+      height: auto;
+      }
+      p {
+      margin: 0 0 1.5em;
+      padding: 0;
+      }
+      em,
+      dfn {
+      font-style: italic;
+      }
+      ins {
+      border-bottom: none;
+      text-decoration: none;
+      }
+      abbr, acronym {
+      border-bottom: 1px dotted;
+      cursor: help;
+      white-space: nowrap;
+      }
+      pre,
+      code,
+      tt,
+      samp,
+      kbd,
+      var {
+      font-size: 0.846em;
+      font-family: Monaco, "DejaVu Sans Mono", monospace, sans-serif; /* Safari hack */
+      }
+      blockquote,
+      q {
+      font-style:italic;
+      quotes:"" "";
+      }
+      blockquote,
+      p {
+      margin: 1.5em 0;
+      }
+      p:first-child,
+      p.first-child {
+      margin-top: 0;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+      content:"";
+      }
+      strong,
+      dfn,
+      caption,
+      th {
+      font-weight: 700;
+      }
+      pre,
+      div.codeblock {
+      background-color: #f5f5f5;
+      border: solid 1px #ddd;
+      border-bottom-color: #ccc;
+      border-right-color: #ccc;
+      padding: 1em;
+      white-space: pre-wrap;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      }
+      /* Lists */
+      ul,
+      ol {
+      margin: 0 0 1.5em 1em;
+      padding:0;
+      }
+      .item-list ul,
+      .item-list ol {
+      margin: 0 0 0 1em;
+      padding: 0;
+      }
+      ul ul,
+      ul ol,
+      ol ol,
+      ol ul,
+      .block ul ul,
+      .block ul ol,
+      .block ol ol,
+      .block ol ul,
+      .item-list ul ul,
+      .item-list ul ol,
+      .item-list ol ol,
+      .item-list ol ul {
+      margin-bottom: 0;
+      }
+      ul {
+      list-style-type: disc;
+      }
+      ul ul ul {
+      list-style-type: square;
+      }
+      ol {
+      list-style-type: decimal;
+      }
+      ol ol {
+      list-style-type: lower-alpha;
+      }
+      ol ol ol {
+      list-style-type: lower-roman;
+      }
+      ul ul,
+      ul ul ul ul {
+      list-style-type: circle;
+      }
+      dl {
+      margin: 1em 0;
+      padding: 0;
+      }
+      dt {
+      font-size: 1.231em;
+      }
+      dd {
+      margin: 0 0 0.4em 0;
+      padding: 0 0 0 2em;
+      }
+      dd:last-child {
+      border-bottom: 0;
+      }
+      dl dl {
+      margin-left: 1em;
+      }
+      body {
+      font: 13px/1.5 'Roboto','Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif !important;
+      color: #3D3D3D;
+      }
+      pre,
+      code {
+      font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+      }
+      hr {
+      border: 0 #ccc solid;
+      border-top-width: 1px;
+      clear: both;
+      height: 0;
+      }
+      /* `Headings
+      ----------------------------------------------------------------------------------------------------*/
+      h1 {
+      font-size: 20px;
+      line-height: 22px;
+      }
+      h2 {
+      font-size: 18px;
+      line-height: 20px;
+      }
+      h3 {
+      font-size: 16px;
+      line-height: 18px;
+      }
+      h4 {
+      font-size: 14px;
+      line-height: 16px;
+      }
+      h5 {
+      font-size: 12px;
+      line-height: 14px;
+      }
+      h6 {
+      font-size: 12px;
+      line-height: 14px;
+      }
+      /* `Spacing
+      ----------------------------------------------------------------------------------------------------*/
+      ol {
+      list-style: decimal;
+      }
+      ul {
+      list-style: disc;
+      }
+      li {
+      margin-left: 30px;
+      }
+      p,
+      dl,
+      hr,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      ol,
+      ul,
+      pre,
+      table,
+      address,
+      fieldset,
+      figure {
+      margin-bottom: 10px;
+      }
+      address { font-style: normal; }
+    </style>
 </head>
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-325 node-type-page atv-7.54 color-scheme-default appinventor gecko win fs-medium bs-n bb-n mb-dd rc-0 rct-8 ia-r bf-l snf-a ssf-a ptf-a ntf-a ctf-a btf-a" >
   <div id="skip-link">
